@@ -16,12 +16,21 @@ const changeValue=(action)=>{
             <p className=" text-[25px]" >Number Of Movie:{count}</p>
             <button onClick={()=>changeValue('increment')} className="text-[20px] text-center px-5">Add Movie</button>
             <button onClick={()=>changeValue('decrement')} className="text-[20px] text-center">Remove Movie</button>
+            <MovieDisplay movie={count +5}/>
+            <MovieDisplay movie={count +50}/>
             </div>
         </>
     )
 
 }
 
+const MovieDisplay=(props)=>{
+    return(
+        <>
+            <h1>Movie Display:{props.movie}</h1>
+        </>
+    )
+}
 
 
 
