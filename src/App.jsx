@@ -4,6 +4,7 @@ import Card from "./componets/Card"
 import Event from "./componets/Event"
 import Map from "./componets/Map"
 import Propes from "./componets/Propes"
+import Props from "./componets/Props"
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <Map/>
       <Event/>
       <ApiData/>
+      <Props/>
     </>
   )
 }
