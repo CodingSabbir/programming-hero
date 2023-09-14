@@ -1,4 +1,5 @@
 
+import ApiData from "./componets/ApiData"
 import Card from "./componets/Card"
 import Event from "./componets/Event"
 import Map from "./componets/Map"
@@ -15,6 +16,7 @@ function App() {
       <Propes name='Tawid Hridy '  age='24' city='Bogura'/>
       <Map/>
       <Event/>
+      <ApiData/>
     </>
   )
 }
