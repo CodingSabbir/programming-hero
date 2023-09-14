@@ -1,5 +1,6 @@
 
 import Card from "./componets/Card"
+import Event from "./componets/Event"
 import Map from "./componets/Map"
 import Propes from "./componets/Propes"
 
@@ -13,7 +14,7 @@ function App() {
       <Propes name='Mustafizur '  age='26' city='Shatkhira'/>
       <Propes name='Tawid Hridy '  age='24' city='Bogura'/>
       <Map/>
-   
+      <Event/>
     </>
   )
 }
