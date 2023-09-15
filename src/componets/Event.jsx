@@ -34,7 +34,55 @@ const MovieDisplay=(props)=>{
 
 
 
+const obj=[
+    {
+        name:'tamim',
+        age:38,
+        city:'chottogram',
+    },
+    {
+        name:'sakib',
+        age:35,
+        city:'magura',
+    },
+    {
+        name:'fizz',
+        age:33,
+        city:'shatkhira',
+    },
+    {
+        name:'taskin',
+        age:33,
+        city:'shatkhira',
+    },
+]
 
+
+const ShowData=(props)=>{
+        return(
+            <>
+                <div className="my-20">
+                    <h1>{props.name}</h1>
+                    <p>{props.age}</p>
+                    <p>{props.city}</p>
+                </div>
+            </>
+        )
+}
+
+
+const MyObject=()=>{
+    return(
+        <>
+            
+            {
+             obj.map((userName,index)=>(
+                <ShowData key={index} name={userName.name} city={userName.city} age={userName.age}/>
+             ))   
+            }
+        </>
+    )
+}
 
 
 
@@ -62,6 +110,7 @@ const Event = () => {
     return(
         <>
        <MovieCounter/>
+       <MyObject/>
             <h1 className="text-[25px] font-bold">Count:{count.name}</h1>
             <button onClick={CuntEvent}>Click me</button>
         </>

@@ -1,5 +1,6 @@
 
 import ApiData from "./componets/ApiData"
+import ApiFunc from "./componets/ApiFunc"
 import Card from "./componets/Card"
 import Event from "./componets/Event"
 import Map from "./componets/Map"
@@ -19,6 +20,7 @@ function App() {
       <Event/>
       <ApiData/>
       <Props/>
+      <ApiFunc/>
     </>
   )
 }
